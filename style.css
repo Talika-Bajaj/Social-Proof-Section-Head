@@ -45,8 +45,11 @@ body {
 }
 
 .one {
+    width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 41% 50%;
+    /* gap: 119px; */
+    justify-content: space-between;
 }
 
 .head h1 {

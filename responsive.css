@@ -1,3 +1,8 @@
+@media screen and (min-width: 1380px) {
+    .one {
+        grid-template-columns: 402px 600px;
+    }
+}
 @media screen and (max-width: 1300px) {
     .card {
         width: 95vw;
