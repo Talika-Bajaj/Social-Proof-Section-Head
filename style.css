@@ -9,39 +9,27 @@
 }
 
 :root {
-    
---Very_Dark_Magenta: hsl(300, 43%, 22%);
---Soft_Pink: hsl(333, 80%, 67%);
 
-/* Neutral */
+    --Very_Dark_Magenta: hsl(300, 43%, 22%);
+    --Soft_Pink: hsl(333, 80%, 67%);
 
---Dark_Grayish_Magenta: hsl(303, 10%, 53%);
---Light_Grayish_Magenta: hsl(300, 24%, 96%);
---White: hsl(0, 0%, 100%)
+    /* Neutral */
+
+    --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+    --Light_Grayish_Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%)
 }
 
 body {
+    background: url('images/bg-pattern-top-desktop.svg'),
+        url('images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    background-size: auto, 901px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#img1 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 930px;
-}
-
-#img2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#img3 , #img4 {
-    display: none;
 }
 
 .card {
@@ -60,10 +48,6 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-
-/* .head, .rate { */
-    /* padding: 40px 62px; */
-/* } */
 
 .head h1 {
     font-size: 63px;
@@ -85,12 +69,14 @@ body {
     gap: 25px;
 }
 
-.review, .report, .tech {
+.review,
+.report,
+.tech {
     display: flex;
     width: fit-content;
     align-items: center;
     gap: 20px;
-    padding: 15px 50px 15px 30px; 
+    padding: 15px 50px 15px 30px;
     border-radius: 5px;
     background-color: var(--Light_Grayish_Magenta);
 }
@@ -100,18 +86,20 @@ body {
 }
 
 .tech {
-    padding: 15px 67px 15px 30px; 
+    padding: 15px 67px 15px 30px;
     margin-left: 95px;
 }
 
-.review p, .report p, .tech p {
+.review p,
+.report p,
+.tech p {
     color: var(--Very_Dark_Magenta);
     font-weight: 700;
 }
 
 .two {
     display: grid;
-    grid-template-columns: auto auto auto;  
+    grid-template-columns: auto auto auto;
     gap: 30px;
     /* padding: 0 61px; */
 }
