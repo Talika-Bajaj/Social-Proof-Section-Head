@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+
+}
+
+:root {
+    
+--Very_Dark_Magenta: hsl(300, 43%, 22%);
+--Soft_Pink: hsl(333, 80%, 67%);
+
+/* Neutral */
+
+--Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+--Light_Grayish_Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%)
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 930px;
+}
+
+#img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#img3 , #img4 {
+    display: none;
+}
+
+.card {
+    width: 90vw;
+    /* border: 2px solid red; */
+}
+
+.info {
+    padding: 22px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+}
+
+.one {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* .head, .rate { */
+    /* padding: 40px 62px; */
+/* } */
+
+.head h1 {
+    font-size: 63px;
+    color: var(--Very_Dark_Magenta);
+    margin-bottom: 22px;
+}
+
+.head p {
+    color: var(--Dark_Grayish_Magenta);
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 500;
+    width: 85%;
+}
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.review, .report, .tech {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 50px 15px 30px; 
+    border-radius: 5px;
+    background-color: var(--Light_Grayish_Magenta);
+}
+
+.report {
+    margin-left: 50px;
+}
+
+.tech {
+    padding: 15px 67px 15px 30px; 
+    margin-left: 95px;
+}
+
+.review p, .report p, .tech p {
+    color: var(--Very_Dark_Magenta);
+    font-weight: 700;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: auto auto auto;  
+    gap: 30px;
+    /* padding: 0 61px; */
+}
+
+.author {
+    background-color: var(--Very_Dark_Magenta);
+    height: fit-content;
+    padding: 38px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.author p {
+    color: var(--White);
+    line-height: 1.4;
+}
+
+.show {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.show img {
+    border-radius: 50%;
+}
+
+.name {
+    line-height: 1.3;
+}
+
+.name p:first-child {
+    font-weight: 600;
+}
+
+.buyer {
+    color: var(--Soft_Pink) !important;
+}
+
+.author1 {
+    margin-top: -50px;
+}
+
+.author2 {
+    margin-top: -30px;
+}

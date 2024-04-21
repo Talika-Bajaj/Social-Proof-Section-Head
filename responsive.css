@@ -1,0 +1,65 @@
+@media screen and (max-width: 1300px) {
+    .card {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #img1 {
+        display: none;
+      
+      }
+
+    /* #img3 {
+        display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 230px;
+    } */
+    
+   .one, .two {
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+
+    .head {
+        text-align: center;
+    }
+
+    .head p {
+        width: 100%;
+    }
+
+    .rate {
+        align-items: center;
+    }
+
+    .report, .tech {
+        margin-left: 0;
+    }
+
+    .author1, .author2 {
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 627px) {
+    #img1,#img2 {
+  display: none;
+
+}
+
+.card {
+    width: 95vw;
+}
+
+#img4 {
+    display: inline;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* width: 930px; */
+}
+}
